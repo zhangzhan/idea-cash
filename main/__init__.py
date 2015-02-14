@@ -15,6 +15,3 @@ app.config.from_object('main.settings')
 db.init_app(app)
 
 logger = config_log(app.config.get("LOGGER_NAME"), app.config.get("LOGGER_LEVEL", "DEBUG"), app.config.get("LOGGER_PATH", None))
-
-
-coding db error commit
